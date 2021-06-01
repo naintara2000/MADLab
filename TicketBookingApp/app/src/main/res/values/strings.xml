@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Ticket Booking App</string>
+    <string-array name="places_array">
+        <item>Bangalore</item>
+        <item>Chennai</item>
+        <item>Delhi</item>
+        <item>Kolkata</item>
+        <item>Manipal</item>
+        <item>Mumbai</item>
+    </string-array>
+</resources>
