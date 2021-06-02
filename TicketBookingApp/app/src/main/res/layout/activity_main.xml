@@ -12,10 +12,13 @@
         android:layout_height="30dp"
         android:layout_marginStart="1dp"
         android:layout_marginEnd="1dp"
+        android:layout_marginBottom="464dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/spinnerSource"
+        app:layout_constraintVertical_bias="0.514" />
 
     <Button
         android:id="@+id/buttonSelect"
@@ -24,12 +27,12 @@
         android:layout_marginStart="150dp"
         android:layout_marginTop="145dp"
         android:layout_marginEnd="150dp"
-        android:layout_marginBottom="160dp"
+        android:layout_marginBottom="50dp"
         android:onClick="SelectButton"
         android:text="CONFIRM"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinnerDestinations"
         app:layout_constraintVertical_bias="1.0" />
@@ -39,12 +42,105 @@
         android:layout_width="300dp"
         android:layout_height="30dp"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="282dp"
+        android:layout_marginTop="100dp"
         android:layout_marginEnd="1dp"
-        android:layout_marginBottom="218dp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonSelect"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="297dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSelect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.969" />
+
+    <TextView
+        android:id="@+id/destLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Source: "
+        app:layout_constraintBottom_toTopOf="@+id/spinnerSource"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.888" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Destination: "
+        app:layout_constraintBottom_toTopOf="@+id/spinnerDestinations"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.168"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerSource"
+        app:layout_constraintVertical_bias="0.166" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Date and Time:  "
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerDestinations"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textDate"
+        android:layout_width="145dp"
+        android:layout_height="26dp"
+        android:text="Date"
+        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintHorizontal_bias="0.714"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="279dp" />
+
+    <TextView
+        android:id="@+id/textTime"
+        android:layout_width="141dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="48dp"
+        android:text="Time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/buttonDate"
+        android:layout_width="141dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="24dp"
+        android:text="Select Date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/buttonTime"
+        android:layout_width="141dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Select Time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
