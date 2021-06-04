@@ -10,11 +10,14 @@ import android.widget.TextView;
 import android.view.View;
 import android.widget.Toast;
 
+import java.util.List;
+
 public class MainActivity2 extends AppCompatActivity {
 
     TextView textView;
     Button button;
     CheckBox A1, A2, A3, A4, B1, B2, B3, B4, C1, C2, C3, C4, D1, D2, D3, D4;
+    //List<String> messageList = new List<String>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +26,7 @@ public class MainActivity2 extends AppCompatActivity {
 
         Intent intent = getIntent();
         String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
+        CharSequence mess = intent.
         textView = findViewById(R.id.textView);
         textView.setText(message);
 

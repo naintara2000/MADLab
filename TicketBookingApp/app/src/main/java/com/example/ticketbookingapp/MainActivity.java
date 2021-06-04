@@ -3,6 +3,7 @@
 
 package com.example.ticketbookingapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -38,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
     TextView textDate2;
     TextView textTime2;
     Button toggle1;
+    CharSequence charSequence = new CharSequence();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
